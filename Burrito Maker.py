@@ -33,6 +33,7 @@ class Burrito:
      def confirmation(self):
         print("Your order is confirmed. Your Yummy Burrito will be there in the next 5-10 min")
 
+
 myBurrito = Burrito()
 
 myBurrito.tortilla()
@@ -47,3 +48,28 @@ myBurrito.cheese()
 myBurrito.corn()
 myBurrito.confirmation()
 
+print("Your Bill is")
+chicken_price = "8.00"
+steak_price = "7.50"
+cheese_price = "1.50"
+guacmole_price = "2.00"
+meat2 = print(input("Did you have Chicken or Steak"))
+if meat2 == "Chicken" or "chicken":
+    print("Your Burrito is $" + chicken_price)
+else:
+    print("Your Burrito is $" + steak_price)
+cheese2 = print(input("Did you take cheese or not"))
+if cheese2 == "Yes" or "yes" or "Y" or "y":
+    print("There will be an additional charge of $" + cheese_price)
+else:
+    print("You wil have no additional charge")
+guacmole2 = print(input("Did you take guacmole or not"))
+if cheese2 == "Yes" or "yes" or "Y" or "y":
+    print("There will be an additional charge of $" + guacmole_price)
+else:
+    print("You wil have no additional charge")
+
+total_price = (float(chicken_price) + float(steak_price) + float(cheese_price) + float(guacmole_price))
+
+print("Your Total Bill is $")
+print(total_price)
